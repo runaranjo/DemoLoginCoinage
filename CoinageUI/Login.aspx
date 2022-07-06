@@ -21,11 +21,11 @@
             <div class="user-details">
                 <div class="input-box">
                 <span class="details">Username</span>
-                    <input type="text" placeholder="Ingresa tu usuario" />
+                    <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa tu usuario"></asp:TextBox>
                 </div>
                 <div class="input-box">
                 <span class="details">Contrasena</span>
-                <input type="text" placeholder="Ingresa tu contrasena" />
+                    <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingresa tu contrasena" ></asp:TextBox>
                 </div>
              
             </div>
@@ -52,17 +52,23 @@
 
            <div class="float-container">
 
-          <div class="button">
-               <asp:Button ID="Button1"  runat="server" Text="Inicia Sesion" onClick="Button1_Click"/> 
-          </div>
+              <div class="button" style="width:50%; margin:auto">
+                   <asp:Button ID="BtnLogin" runat="server" Text="Inicia Sesion" onClick="Button1_Click"/> 
+              </div>
+               
+            <%-- <div class="button">
+               <asp:Button ID="BtnRegistrarLogin" runat="server" Text="No tienes cuenta? Registrate" OnClick="Button2_Click" />
+             </div>--%>
 
-         <div class="button">
-           <asp:Button ID="Button2" runat="server" Text="No tienes cuenta? Registrate" OnClick="Button2_Click" />
-         </div>
-         
+               <div style="width: 50%; margin-top: 15px">
+               <asp:LinkButton ID="LBGoToRegistrarse" runat="server" style="float: left; font-size: 17px; color: #51a8e8" OnClick="LBGoToRegistrarse_Click">No tienes cuenta? Registrate</asp:LinkButton>
+               </div>
+               
 
 
         </div>
+
+
         </form>
 
     </div>

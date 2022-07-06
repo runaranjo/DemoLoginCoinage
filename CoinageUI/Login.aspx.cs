@@ -19,7 +19,8 @@ namespace CoinageUI
             Response.Redirect("");
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
+
+        protected void LBGoToRegistrarse_Click(object sender, EventArgs e)
         {
             Response.Redirect("RegistroUI.aspx");
         }

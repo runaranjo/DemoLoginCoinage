@@ -15,10 +15,19 @@
 <body>
     
     
-    <div class="container">
-        <div class="title">Registro Usuario</div>
+    <div class="container" >
+        
        <form action="#" runat="server">
-            <div class="user-details">
+
+           
+           <div class="title" style="display:block;float:left;width: 50%;">Registro Usuario</div>
+       
+           
+           <asp:LinkButton ID="LBGoBack" runat="server" style="display:block;margin-left:auto; text-align:right;width:50%;font-size: 17px; color: grey;" OnClick="LBGoBack_Click">Ir a Login</asp:LinkButton>
+            
+
+
+           <div class="user-details">
                 <div class="input-box">
                 <span class="details">Nombre Completo</span>
                     <input type="text" placeholder="Ingresa tu nombre completo" />
@@ -65,7 +74,7 @@
                 </div>
            </div>--%>
           <div class="button">
-               <asp:Button ID="Button1"  runat="server" Text="Registrarse"/>
+               <asp:Button ID="BtnRegistrarse"  runat="server" Text="Registrarse"/>
         </div>
 
 
