@@ -28,30 +28,41 @@
 
 
            <div class="user-details">
+
                 <div class="input-box">
                 <span class="details">Nombre Completo</span>
-                    <input type="text" placeholder="Ingresa tu nombre completo" />
+                <asp:TextBox ID="TxtBoxNombre" runat="server" placeholder="Ingresa tu nombre completo"></asp:TextBox>
                 </div>
+
                 <div class="input-box">
                 <span class="details">ID</span>
-                <input type="text" placeholder="Ingresa tu cedula de identidad" />
+                <%--<input type="text" placeholder="Ingresa tu cedula de identidad" />--%>
+                 <asp:TextBox ID="TxtBoxID" runat="server" placeholder="Ingresa tu cedula de identidad"></asp:TextBox>
                 </div>
+
                 <div class="input-box">
                 <span class="details">Email</span>
-                <input type="text" placeholder="Ingresa tu correo" />
+                <asp:TextBox ID="TxtBoxEmail" runat="server" placeholder="Ingresa tu correo"></asp:TextBox>
                 </div>
+
                 <div class="input-box">
                 <span class="details">Phone Number</span>
-                <input type="text" placeholder="Ingresa tu numero de telefono" />
+                <%--<input type="text" placeholder="Ingresa tu numero de telefono" />--%>
+                <asp:TextBox ID="TxtBoxTelefono" runat="server" placeholder="Ingresa tu numero de telefono"></asp:TextBox>
                 </div>
+
                 <div class="input-box">
                 <span class="details">Password</span>
-                <input type="text" placeholder="Ingresa tu contrasena" />
+                <%-- <input type="text" placeholder="Ingresa tu contrasena" />--%>
+                <asp:TextBox ID="TxtBoxPassword" runat="server" placeholder="Ingresa tu contrasena"></asp:TextBox>
                 </div>
+
                 <div class="input-box">
                 <span class="details">Confirm Password</span>
-                <input type="text" placeholder="Confirma tu contrasena" />
+               <%-- <input type="text" placeholder="Confirma tu contrasena" />--%>
+                <asp:TextBox ID="TxtBoxConfirmPass" runat="server" placeholder="Confirma tu contrasena"></asp:TextBox>
                 </div>
+
             </div>
           <%-- <div class="gender-details"">
                <input type="radio" name="gender" id="dot-1" >

@@ -21,11 +21,11 @@
             <div class="user-details">
                 <div class="input-box">
                 <span class="details">Username</span>
-                    <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa tu usuario"></asp:TextBox>
+                    <asp:TextBox ID="TxtUsername" runat="server" placeholder="Ingresa tu usuario"></asp:TextBox>
                 </div>
                 <div class="input-box">
                 <span class="details">Contrasena</span>
-                    <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingresa tu contrasena" ></asp:TextBox>
+                    <asp:TextBox ID="TxtPassword" runat="server" placeholder="Ingresa tu contrasena" ></asp:TextBox>
                 </div>
              
             </div>
@@ -53,7 +53,7 @@
            <div class="float-container">
 
               <div class="button" style="width:50%; margin:auto">
-                   <asp:Button ID="BtnLogin" runat="server" Text="Inicia Sesion" onClick="Button1_Click"/> 
+                   <asp:Button ID="BtnLogin" runat="server" Text="Inicia Sesion" onClick="BtnLogin_Click"/> 
               </div>
                
             <%-- <div class="button">
@@ -62,6 +62,7 @@
 
                <div style="width: 50%; margin-top: 15px">
                <asp:LinkButton ID="LBGoToRegistrarse" runat="server" style="float: left; font-size: 17px; color: #51a8e8" OnClick="LBGoToRegistrarse_Click">No tienes cuenta? Registrate</asp:LinkButton>
+                   <asp:Label ID="LblLoginFailed" runat="server" Text="Label" style="float:right; color: #A72037" Visible="false">Usuario o Password incorrecto!</asp:Label>
                </div>
                
 
