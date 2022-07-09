@@ -18,5 +18,11 @@ namespace CoinageUI
         {
 
         }
+
+        protected void BtnSalirUsuario_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("Login.aspx");
+        }
     }
 }

@@ -2,14 +2,68 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" dir="ltr">
 <head runat="server">
-    <title></title>
+
+    <meta charset="UTF-8">
+    <title>Principal</title>
+    <link href="Style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
+    
+    
+    <div class="container">
+        <div class="title">Bienvenido, Admin</div>
+        <table></table>
+       <form action="#" runat="server">
+            <div class="user-details">
+
+                <div class="input-box">
+                    <%--<input type="submit" Value="Administrar Rutas" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);"/>--%>
+
+                    <asp:Button ID="BtnAdminRuta" runat="server" Text="Administrar Rutas" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);" />
+                </div>
+
+                <div class="input-box">
+                <span class="details">ADMINISTRADOR </span>
+               
+                </div>
+
+                <div class="input-box">
+                    <%--<input type="submit" Value="Administrar Usuarios" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);"/>--%>
+                    <asp:Button ID="BtnAdminUsr" runat="server" Text="Administrar Usuarios" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);"/>
+                </div>
+
+               <%-- <div class="input-box">
+                
+                </div>--%>
+
+            <%--    <div class="input-box">
+                    <input type="submit" Value="Mis metodos de pago" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);"/>
+                </div>--%>
+
+               <%-- <div class="input-box">
+              
+                </div>--%>
+
+            </div>
+        
+
+        <div class="button">
+            <%--<input type="submit" Value="Salir" style="background: #71b7e6;"/>--%>
+     <asp:Button ID="BtnSalirAdmin" runat="server" Text="Salir" style=" color: #fff; background: #71b7e6;" OnClick="BtnSalirAdmin_Click" />
         </div>
-    </form>
+
+
+           
+        </form>
+
+    </div>
+    
+
+    
 </body>
 </html>

@@ -50,7 +50,8 @@
         
 
         <div class="button">
-            <input type="submit" Value="Salir" style="background: #71b7e6;"/>
+            <%--<input type="submit" Value="Salir" style="background: #71b7e6;"/>--%>
+            <asp:Button ID="BtnSalirUsuario" runat="server" Text="Salir" style=" color: #fff; background: #71b7e6;" OnClick="BtnSalirUsuario_Click" />
         </div>
 
 

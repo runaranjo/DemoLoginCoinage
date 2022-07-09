@@ -85,8 +85,11 @@
                 </div>
            </div>--%>
           <div class="button">
-               <asp:Button ID="BtnRegistrarse"  runat="server" Text="Registrarse"/>
+               <asp:Button ID="BtnRegistrarse"  runat="server" Text="Registrarse" OnClick="BtnRegistrarse_Click"/>
+              <%--<asp:Label ID="LblLoginFailed" runat="server" Text="Label" style="margin: 0 auto; color: #A72037" Visible="false">Usuario o Password incorrecto!</asp:Label>--%>
         </div>
+
+           <asp:Label ID="LblUsuarioIncorrecto" runat="server" Text="Label" style="margin: 0 auto; margin-left: 30%; color: #A72037" Visible="false"></asp:Label>
 
 
         </form>
