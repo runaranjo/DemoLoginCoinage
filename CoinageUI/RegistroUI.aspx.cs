@@ -23,62 +23,64 @@ namespace CoinageUI
 
         protected void BtnRegistrarse_Click(object sender, EventArgs e)
         {
-            using (SqlConnection sqlCon = new SqlConnection(@"Data Source=.\sqlexpress; initial Catalog=ViajeFacil; Integrated Security=True;"))
-            {
+            //using (SqlConnection sqlCon = new SqlConnection(@"Data Source=.\sqlexpress; initial Catalog=ViajeFacil; Integrated Security=True;"))
+            //{
 
 
-                sqlCon.Open();
+            //    sqlCon.Open();
 
-                string usuarioInvalido = "El usuario es invalido o ya existe";
-                string checkDB = "SELECT * FROM Usuario WHERE email = @email";
+            //    string checkDB = "Select Count(1) FROM Usuario WHERE email=@username";
+            //    SqlCommand sqlcom = new SqlCommand(checkDB, sqlCon);
+            //    sqlcom.Parameters.AddWithValue("@username", TxtBoxEmail.Text);
+            //    int count = Convert.ToInt32(sqlcom.ExecuteScalar());
 
-                SqlCommand sqlcom = new SqlCommand(checkDB, sqlCon);
-
-                sqlcom.Parameters.AddWithValue("@email", TxtBoxEmail.Text);
-                //sqlcom.Parameters.AddWithValue("@password", TxtBoxPassword.Text.Trim());
-                sqlcom.ExecuteNonQuery();
-                SqlDataReader reader = sqlcom.ExecuteReader();
+                DBRead cnt = new DBRead();
+            //cnt.VerificaUsuarioRegistro(TxtBoxEmail.Text);
 
 
-                if (reader.HasRows)
+
+                if (cnt.VerificaUsuarioRegistro(TxtBoxEmail.Text) == 1)
                 {
+                    string usuarioInvalido = "El usuario es invalido o ya existe";
                     LblUsuarioIncorrecto.Text = usuarioInvalido;
+                    LblUsuarioIncorrecto.Visible = true;
 
                 }
-                else
-                {
+            //else
+            //{
 
-                    string query = "Insert into Usuario (email,password,activo,idrol,) Values(@email, @password, @activo, @idrol)";
-                    SqlCommand insertarCom = new SqlCommand(query, sqlCon);
-                    insertarCom.Parameters.AddWithValue("@email", TxtBoxEmail.Text);
-                    insertarCom.Parameters.AddWithValue("@pas", TxtBoxPassword.Text);
-                    insertarCom.Parameters.AddWithValue("@activo", true);
-                    insertarCom.Parameters.AddWithValue("@idrol", 3);
-                    sqlcom.ExecuteNonQuery();
-                    sqlCon.Close();
+            //    string query = "Insert into Usuario (email,password,activo,idrol) Values(@email, @password, @activo, @idrol)";
 
-
-
-
-                }
+            //    SqlCommand insertarCom = new SqlCommand(query, sqlCon);
+            //    insertarCom.Parameters.AddWithValue("@email", TxtBoxEmail.Text);
+            //    insertarCom.Parameters.AddWithValue("@password", TxtBoxPassword.Text);
+            //    insertarCom.Parameters.AddWithValue("@activo", true);
+            //    insertarCom.Parameters.AddWithValue("@idrol", 3);
+            //    insertarCom.ExecuteNonQuery();
+            //    sqlCon.Close();
 
 
 
-           
-                
-                //sqlCon.Open();
-                //string query = "Select Count(1) FROM Usuario WHERE email=@username AND password=@password";
-                //SqlCommand sqlcom = new SqlCommand(query, sqlCon);
-                //sqlcom.Parameters.AddWithValue("@username", TxtUsername.Text.Trim());
-                //sqlcom.Parameters.AddWithValue("@password", TxtPassword.Text.Trim());
-                //int count = Convert.ToInt32(sqlcom.ExecuteScalar());
-                //if (count == 1)
-                //{
-                //    Session["username"] = TxtUsername.Text.Trim();
-                //    Response.Redirect("PPrincipalUsuario.aspx");
-                //}
-                //else { LblLoginFailed.Visible = true; }
-            }
+
+            //}
+
+
+
+
+
+            //sqlCon.Open();
+            //string query = "Select Count(1) FROM Usuario WHERE email=@username AND password=@password";
+            //SqlCommand sqlcom = new SqlCommand(query, sqlCon);
+            //sqlcom.Parameters.AddWithValue("@username", TxtUsername.Text.Trim());
+            //sqlcom.Parameters.AddWithValue("@password", TxtPassword.Text.Trim());
+            //int count = Convert.ToInt32(sqlcom.ExecuteScalar());
+            //if (count == 1)
+            //{
+            //    Session["username"] = TxtUsername.Text.Trim();
+            //    Response.Redirect("PPrincipalUsuario.aspx");
+            //}
+            //else { LblLoginFailed.Visible = true; }
+            //}
         }
     }
 }
