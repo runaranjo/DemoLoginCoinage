@@ -13,6 +13,9 @@ namespace CoinageUI
     public partial class Login : System.Web.UI.Page
     {
 
+        //TO-DO
+        public static string role;
+
         
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,46 +25,26 @@ namespace CoinageUI
         protected void  BtnLogin_Click(object sender, EventArgs e)
         {
 
-
-            
-
-            using (SqlConnection sqlCon = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConexion"].ConnectionString))
-            {
-
-                sqlCon.Open();
-                string query = "Select Count(1) FROM Usuario WHERE email=@username AND password=@password";
-                string queryIdRol = "Select idRol FROM Usuario WHERE email=@username";
-                SqlCommand sqlcom = new SqlCommand(query, sqlCon);
-                SqlCommand sqlcom2 = new SqlCommand(queryIdRol, sqlCon);
-                sqlcom.Parameters.AddWithValue("@username", TxtUsername.Text.Trim());
-                sqlcom.Parameters.AddWithValue("@password", TxtPassword.Text.Trim());
-
-                sqlcom2.Parameters.AddWithValue("@username", TxtUsername.Text.Trim());
-                int count = Convert.ToInt32(sqlcom.ExecuteScalar());
-
-                int idRole = Convert.ToInt32(sqlcom2.ExecuteScalar());
+                DBRead loginUsuario = new DBRead();
+                int count  = loginUsuario.verificarUsuarioLogin(TxtUsername.Text.Trim(), TxtPassword.Text.Trim());
+                int idRole = loginUsuario.verificarUsuarioRol(TxtUsername.Text.Trim());
+                Session["username"] = TxtUsername.Text.Trim();
 
 
-                if (count == 1 && idRole == 1)
+            if (count == 1 && idRole == 1)
                 {
-                    Session["username"] = TxtUsername.Text.Trim();
                     Response.Redirect("PPrincipalAdmin.aspx");
                 }
                 if (count == 1 && idRole == 2)
-                {
-                    Session["username"] = TxtUsername.Text.Trim();
+                {   
                     Response.Redirect("PPrincipalChofer.aspx");
                 }
 
                 if (count == 1 && idRole == 3)
                 {
-                    Session["username"] = TxtUsername.Text.Trim();
                     Response.Redirect("PPrincipalUsuario.aspx");
                 }
                 else { LblLoginFailed.Visible = true; }
-            }
-
-
 
         }
 
