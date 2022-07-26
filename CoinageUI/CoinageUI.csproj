@@ -74,7 +74,7 @@
     <Content Include="PPrincipalChofer.aspx" />
     <Content Include="PPrincipalUsuario.aspx" />
     <Content Include="RegistroUI.aspx" />
-    <Content Include="Style.css" />
+    <Content Include="Styles\Style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

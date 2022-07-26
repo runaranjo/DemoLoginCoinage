@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <title>Registro</title>
-    <link href="Style.css" rel="stylesheet" />
+    <link href="Styles/Style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 
 
