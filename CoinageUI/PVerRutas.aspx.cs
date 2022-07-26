@@ -7,16 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace CoinageUI
 {
-    public partial class PAdminUsuario : System.Web.UI.Page
+    public partial class PVerRutas : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void LinkMenuAdmin_Click(object sender, EventArgs e)
+        protected void LnkBtnMenuUsuarioRutas_Click(object sender, EventArgs e)
         {
-            Response.Redirect("PPrincipalAdmin.aspx");
+            Response.Redirect("PPrincipalUsuario.aspx");
         }
     }
 }

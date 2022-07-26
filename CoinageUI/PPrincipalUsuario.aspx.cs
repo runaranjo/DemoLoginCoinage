@@ -24,5 +24,15 @@ namespace CoinageUI
             Session.Abandon();
             Response.Redirect("Login.aspx");
         }
+
+        protected void BtnAgregarSaldo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PUsuarioAgregaSaldo.aspx");
+        }
+
+        protected void BtnVerRutas_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PVerRutas.aspx");
+        }
     }
 }

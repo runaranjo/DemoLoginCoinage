@@ -13,5 +13,10 @@ namespace CoinageUI
         {
 
         }
+
+        protected void LnkBtnRutasMenuAdmin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PPrincipalAdmin.aspx");
+        }
     }
 }

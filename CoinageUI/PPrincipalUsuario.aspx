@@ -22,25 +22,26 @@
             <div class="user-details">
 
                 <div class="input-box">
-                    <input type="submit" Value="Rutas" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);"/>
+                    <asp:Button ID="BtnVerRutas" runat="server" Text="Ver Rutas" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);" OnClick="BtnVerRutas_Click"/>
                 </div>
 
                 <div class="input-box">
-                <span class="details">Mi Saldo: 4,350.00 </span>
+                <span class="details">Mi Saldo: 0,00 </span>
                
                 </div>
 
                 <div class="input-box">
-                    <input type="submit" Value="Agregar saldo" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);"/>
+                    
+                    <asp:Button ID="BtnAgregarSaldo" runat="server" Text="Agregar Saldo " style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);" OnClick="BtnAgregarSaldo_Click" />
                 </div>
 
                 <div class="input-box">
                 
                 </div>
 
-                <div class="input-box">
+               <%-- <div class="input-box">
                     <input type="submit" Value="Mis metodos de pago" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);"/>
-                </div>
+                </div>--%>
 
                 <div class="input-box">
               

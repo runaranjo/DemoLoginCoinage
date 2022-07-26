@@ -11,62 +11,62 @@ namespace CoinageUI
 {
 
 
-    public partial class PAdminRuta
+    public partial class PDeshabilitaUsuario
     {
 
         /// <summary>
-        /// LnkBtnRutasMenuAdmin control.
+        /// LnkBtnDUMenuAdmin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LnkBtnRutasMenuAdmin;
+        protected global::System.Web.UI.WebControls.LinkButton LnkBtnDUMenuAdmin;
 
         /// <summary>
-        /// TxtBoxNombreRuta control.
+        /// TxtboxEmailUsuario control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtBoxNombreRuta;
+        protected global::System.Web.UI.WebControls.TextBox TxtboxEmailUsuario;
 
         /// <summary>
-        /// TxtBoxID control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtBoxID;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// TxtBoxEmail control.
+        /// TextBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtBoxEmail;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
 
         /// <summary>
-        /// TxtBoxTelefono control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtBoxTelefono;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// BtnAgregarRuta control.
+        /// BtnDeshabilitarUsuario control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAgregarRuta;
+        protected global::System.Web.UI.WebControls.Button BtnDeshabilitarUsuario;
 
         /// <summary>
         /// LblUsuarioIncorrecto control.

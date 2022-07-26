@@ -11,43 +11,34 @@ namespace CoinageUI
 {
 
 
-    public partial class PPrincipalAdmin
+    public partial class PVerRutas
     {
 
         /// <summary>
-        /// BtnAdminRuta control.
+        /// LnkBtnMenuUsuarioRutas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAdminRuta;
+        protected global::System.Web.UI.WebControls.LinkButton LnkBtnMenuUsuarioRutas;
 
         /// <summary>
-        /// BtnAdminUsr control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAdminUsr;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// BtnDeshabilitaUsuario control.
+        /// ListBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnDeshabilitaUsuario;
-
-        /// <summary>
-        /// BtnSalirAdmin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSalirAdmin;
+        protected global::System.Web.UI.WebControls.ListBox ListBox1;
     }
 }

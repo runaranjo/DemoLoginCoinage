@@ -24,19 +24,22 @@
                 <div class="input-box">
                     <%--<input type="submit" Value="Administrar Rutas" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);"/>--%>
 
-                    <asp:Button ID="BtnAdminRuta" runat="server" Text="Administrar Rutas" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);" />
+                    <asp:Button ID="BtnAdminRuta" runat="server" Text="Administrar Rutas" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);" OnClick="BtnAdminRuta_Click" />
                 </div>
 
-                <div class="input-box">
+                <%--<div class="input-box">
                 <span class="details">ADMINISTRADOR </span>
                
-                </div>
+                </div>--%>
 
                 <div class="input-box">
                     <%--<input type="submit" Value="Administrar Usuarios" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);"/>--%>
-                    <asp:Button ID="BtnAdminUsr" runat="server" Text="Administrar Usuarios" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);"/>
+                    <asp:Button ID="BtnAdminUsr" runat="server" Text="Agregar Chofer" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);" OnClick="BtnAdminUsr_Click"/>
                 </div>
 
+                <div class="input-box">
+                    <asp:Button ID="BtnDeshabilitaUsuario" runat="server" Text="Deshabilitar Usuarios" style=" color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);" OnClick="BtnDeshabilitaUsuario_Click" />
+                </div>
                <%-- <div class="input-box">
                 
                 </div>--%>

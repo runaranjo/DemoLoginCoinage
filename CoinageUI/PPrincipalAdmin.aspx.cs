@@ -22,5 +22,20 @@ namespace CoinageUI
 
 
         }
+
+        protected void BtnAdminUsr_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PAdminUsuario.aspx");
+        }
+
+        protected void BtnDeshabilitaUsuario_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PDeshabilitaUsuario.aspx");
+        }
+
+        protected void BtnAdminRuta_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PAdminRuta.aspx");
+        }
     }
 }
