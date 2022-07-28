@@ -36,19 +36,18 @@
 
                 <div class="input-box">
                 <span class="details">ID Ruta</span>
-                <%--<input type="text" placeholder="Ingresa tu cedula de identidad" />--%>
-                 <asp:TextBox ID="TxtBoxID" runat="server" placeholder="Ingresa Ruta ID"></asp:TextBox>
+                    <%--<input type="text" placeholder="Ingresa tu cedula de identidad" />--%>
+                 <asp:TextBox ID="TxtBoxRutaId" runat="server" placeholder="Ingresa Ruta ID"></asp:TextBox>
                 </div>
 
                 <div class="input-box">
                 <span class="details">Costo</span>
-                <asp:TextBox ID="TxtBoxEmail" runat="server" placeholder="Ingresa el costo de la ruta"></asp:TextBox>
+                <asp:TextBox ID="TxtBoxCosto" runat="server" placeholder="Ingresa el costo de la ruta"></asp:TextBox>
                 </div>
 
                 <div class="input-box">
-                <span class="details">Agregar Canton de la Ruta</span>
-                <%--<input type="text" placeholder="Ingresa tu numero de telefono" />--%>
-                <asp:TextBox ID="TxtBoxTelefono" runat="server" placeholder="Ingresa el canton de la ruta"></asp:TextBox>
+                <span class="details">Agregar Canton de la Ruta</span>                <%--<input type="text" placeholder="Ingresa tu numero de telefono" />--%>
+                <asp:TextBox ID="TxtBoxRutaCanton" runat="server" placeholder="Ingresa el canton de la ruta"></asp:TextBox>
                 </div>
 
             <%--    <div class="input-box">
@@ -64,7 +63,7 @@
                 </div>--%>
 
             </div>
-          <%-- <div class="gender-details"">
+           <%-- <div class="gender-details"">
                <input type="radio" name="gender" id="dot-1" >
                <input type="radio" name="gender" id="dot-2" >
                <input type="radio" name="gender" id="dot-3" >
@@ -86,11 +85,11 @@
            </div>--%>
           <div class="button">
                
-              <asp:Button ID="BtnAgregarRuta" runat="server" Text="Agregar Ruta" />
+              <asp:Button ID="BtnAgregarRuta" runat="server" Text="Agregar Ruta" OnClick="BtnAgregarRuta_Click" />
               <%--<asp:Label ID="LblLoginFailed" runat="server" Text="Label" style="margin: 0 auto; color: #A72037" Visible="false">Usuario o Password incorrecto!</asp:Label>--%>
         </div>
 
-           <asp:Label ID="LblUsuarioIncorrecto" runat="server" Text="Label" style="margin: 0 auto; margin-left: 30%; color: #A72037" Visible="false"></asp:Label>
+           <asp:Label ID="LblRutaAgregada" runat="server" Text="Label" style="margin: 0 auto; margin-left: 30%; color: #A72037" Visible="False"></asp:Label>
 
 
         </form>

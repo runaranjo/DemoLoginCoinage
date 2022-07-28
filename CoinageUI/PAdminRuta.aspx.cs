@@ -9,6 +9,11 @@ namespace CoinageUI
 {
     public partial class PAdminRuta : System.Web.UI.Page
     {
+
+
+        DBUpdate dbActualiza = new DBUpdate();
+
+        DBCreate dbCreaRuta = new DBCreate();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -17,6 +22,25 @@ namespace CoinageUI
         protected void LnkBtnRutasMenuAdmin_Click(object sender, EventArgs e)
         {
             Response.Redirect("PPrincipalAdmin.aspx");
+        }
+
+        protected void BtnAgregarRuta_Click(object sender, EventArgs e)
+        {
+
+
+            int rutaId = Convert.ToInt32(TxtBoxRutaId.Text);
+            int rutaCosto = Convert.ToInt32(TxtBoxCosto.Text);
+
+
+
+            dbCreaRuta.insertRegistroRuta(TxtBoxNombreRuta.Text, rutaId, rutaCosto, 2);
+
+
+            LblRutaAgregada.Visible = true;
+            LblRutaAgregada.Text = "Ruta agregada con exito";
+
+
+
         }
     }
 }

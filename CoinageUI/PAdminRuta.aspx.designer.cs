@@ -33,31 +33,31 @@ namespace CoinageUI
         protected global::System.Web.UI.WebControls.TextBox TxtBoxNombreRuta;
 
         /// <summary>
-        /// TxtBoxID control.
+        /// TxtBoxRutaId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtBoxID;
+        protected global::System.Web.UI.WebControls.TextBox TxtBoxRutaId;
 
         /// <summary>
-        /// TxtBoxEmail control.
+        /// TxtBoxCosto control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtBoxEmail;
+        protected global::System.Web.UI.WebControls.TextBox TxtBoxCosto;
 
         /// <summary>
-        /// TxtBoxTelefono control.
+        /// TxtBoxRutaCanton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtBoxTelefono;
+        protected global::System.Web.UI.WebControls.TextBox TxtBoxRutaCanton;
 
         /// <summary>
         /// BtnAgregarRuta control.
@@ -69,12 +69,12 @@ namespace CoinageUI
         protected global::System.Web.UI.WebControls.Button BtnAgregarRuta;
 
         /// <summary>
-        /// LblUsuarioIncorrecto control.
+        /// LblRutaAgregada control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblUsuarioIncorrecto;
+        protected global::System.Web.UI.WebControls.Label LblRutaAgregada;
     }
 }
