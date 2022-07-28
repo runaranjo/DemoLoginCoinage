@@ -96,21 +96,21 @@ namespace CoinageUI
         protected global::System.Web.UI.WebControls.RadioButton Chofer;
 
         /// <summary>
-        /// Button1 control.
+        /// BtnRegistroChofer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button BtnRegistroChofer;
 
         /// <summary>
-        /// LblUsuarioIncorrecto control.
+        /// LblMensajeConfirmacion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblUsuarioIncorrecto;
+        protected global::System.Web.UI.WebControls.Label LblMensajeConfirmacion;
     }
 }

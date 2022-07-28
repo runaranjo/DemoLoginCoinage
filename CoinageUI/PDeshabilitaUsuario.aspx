@@ -35,18 +35,19 @@
                <div class="user-details">
 
                  <div class="input-box">
-                     <asp:Button ID="Button1" runat="server" Text="Buscar" />
+                     <asp:Button ID="BtnBuscaUsuario" runat="server" Text="Buscar" OnClick="BtnBuscaUsuario_Click" />
                 </div>
 
 
                 <div class="input-box">
                    <span class="details">Nombre del Usuario</span>
-                    <asp:TextBox ID="TextBox1" runat="server" style="width:50%"></asp:TextBox>
+                    <%--<asp:TextBox ID="TxtboxResultadoUsuario" runat="server" style="width:50%"></asp:TextBox>--%>
+                    <asp:Label ID="LblUsuarioEncontrado" runat="server" Text="N/A" style="width:50%"></asp:Label>
                 </div>
 
                 <div class="input-box">
                    <span class="details">Estado del Usuario:</span>
-                    <asp:Label ID="Label1" runat="server" Text="Label">Activo</asp:Label>
+                    <asp:Label ID="LblEstadoUsuario" runat="server" Text="N/A"></asp:Label>
                 </div>
 
 
@@ -58,10 +59,10 @@
 
 
           <div class="button">
-              <asp:Button ID="BtnDeshabilitarUsuario" runat="server" Text="Deshabilitar" />
+              <asp:Button ID="BtnDeshabilitarUsuario" runat="server" Text="Deshabilitar" OnClick="BtnDeshabilitarUsuario_Click" />
            </div>
 
-           <asp:Label ID="LblUsuarioIncorrecto" runat="server" Text="Label" style="margin: 0 auto; margin-left: 30%; color: #A72037" Visible="false"></asp:Label>
+           <asp:Label ID="LblUsuarioIncorrecto" runat="server" Text="Usuario Deshabilitado" style="margin: 0 auto; margin-left: 30%; color: #A72037" Visible="False"></asp:Label>
 
 
         </form>

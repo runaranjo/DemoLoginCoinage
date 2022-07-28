@@ -37,7 +37,7 @@ namespace CoinageUI
                 {
                     DBCreate registraPasajero = new DBCreate();
 
-                    registraPasajero.insertRegistroPasajero(TxtBoxEmail.Text, TxtBoxPassword.Text);
+                    registraPasajero.insertRegistroUsuario(TxtBoxEmail.Text, TxtBoxPassword.Text, 3);
 
                 }
 

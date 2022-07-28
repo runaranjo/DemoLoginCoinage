@@ -20,6 +20,7 @@ namespace CoinageUI
             SqlCommand sqlcom = new SqlCommand(checkDB, sqlCon);
             sqlcom.Parameters.AddWithValue("@username", email);
             int count = Convert.ToInt32(sqlcom.ExecuteScalar());
+            sqlCon.Close();
 
             return count;
 
@@ -53,9 +54,35 @@ namespace CoinageUI
         }
 
 
+        public string buscaUsuarioNombre(string email)
+        {
 
+            sqlCon.Open();
 
+            string checkDB = "Select nombre FROM Pasajeros WHERE email=@username" ;
+            SqlCommand sqlcom = new SqlCommand(checkDB, sqlCon);
+            sqlcom.Parameters.AddWithValue("@username", email);
+            string usuarioDatos = Convert.ToString(sqlcom.ExecuteScalar());
+            sqlCon.Close();
 
+            return usuarioDatos;
+
+        }
+
+        public int buscaUsuarioEstado(string email)
+        {
+
+            sqlCon.Open();
+
+            string checkDB = "Select activo FROM Usuario WHERE email=@username";
+            SqlCommand sqlcom = new SqlCommand(checkDB, sqlCon);
+            sqlcom.Parameters.AddWithValue("@username", email);
+            int usuarioEstado = Convert.ToInt32(sqlcom.ExecuteScalar());
+            sqlCon.Close();
+
+            return usuarioEstado;
+
+        }
 
 
 

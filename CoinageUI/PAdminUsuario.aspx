@@ -36,7 +36,7 @@
 
                 <div class="input-box">
                 <span class="details">ID</span>
-                <%--<input type="text" placeholder="Ingresa tu cedula de identidad" />--%>
+                    <%--<input type="text" placeholder="Ingresa tu cedula de identidad" />--%>
                  <asp:TextBox ID="TxtBoxID" runat="server" placeholder="Ingresa tu cedula de identidad"></asp:TextBox>
                 </div>
 
@@ -47,19 +47,18 @@
 
                 <div class="input-box">
                 <span class="details">Phone Number</span>
-                <%--<input type="text" placeholder="Ingresa tu numero de telefono" />--%>
+                    <%--<input type="text" placeholder="Ingresa tu numero de telefono" />--%>
                 <asp:TextBox ID="TxtBoxTelefono" runat="server" placeholder="Ingresa tu numero de telefono"></asp:TextBox>
                 </div>
 
                 <div class="input-box">
                 <span class="details">Password</span>
-                <%-- <input type="text" placeholder="Ingresa tu contrasena" />--%>
+                    <%-- <input type="text" placeholder="Ingresa tu contrasena" />--%>
                 <asp:TextBox ID="TxtBoxPassword" runat="server" placeholder="Ingresa tu contrasena"></asp:TextBox>
                 </div>
 
                 <div class="input-box">
-                <span class="details">Confirm Password</span>
-               <%-- <input type="text" placeholder="Confirma tu contrasena" />--%>
+                <span class="details">Confirm Password</span>               <%-- <input type="text" placeholder="Confirma tu contrasena" />--%>
                 <asp:TextBox ID="TxtBoxConfirmPass" runat="server" placeholder="Confirma tu contrasena"></asp:TextBox>
                 </div>
 
@@ -89,15 +88,14 @@
                 </div>
            </div>--%>
           <div class="button">
-               <%--<asp:Button ID="BtnRegistrarse"  runat="server" Text="Registrarse" OnClick="BtnRegistrarse_Click"/>--%>
-              <%--<asp:Label ID="LblLoginFailed" runat="server" Text="Label" style="margin: 0 auto; color: #A72037" Visible="false">Usuario o Password incorrecto!</asp:Label>--%>
+               <%--<asp:Button ID="BtnRegistrarse"  runat="server" Text="Registrarse" OnClick="BtnRegistrarse_Click"/>--%>              <%--<asp:Label ID="LblLoginFailed" runat="server" Text="Label" style="margin: 0 auto; color: #A72037" Visible="false">Usuario o Password incorrecto!</asp:Label>--%>
 
-              <asp:Button ID="Button1" runat="server" Text="Crear Usuario" />
+              <asp:Button ID="BtnRegistroChofer" runat="server" Text="Registrar Chofer" OnClick="BtnRegistroChofer_Click" />
 
 
         </div>
 
-           <asp:Label ID="LblUsuarioIncorrecto" runat="server" Text="Label" style="margin: 0 auto; margin-left: 30%; color: #A72037" Visible="false"></asp:Label>
+           <asp:Label ID="LblMensajeConfirmacion" runat="server" Text="Label" style="margin: 0 auto; margin-left: 30%; color: #5EBA7D" Visible="False"></asp:Label>
 
 
         </form>
