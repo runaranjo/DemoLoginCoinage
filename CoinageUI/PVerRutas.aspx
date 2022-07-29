@@ -28,8 +28,7 @@
 
 
                 <div class="input-box">
-                     <span class="details">Aca podes ver todas las rutas disponibles</span>
-                    <%--<asp:DropDownList ID="DropDownList1" runat="server" >
+                     <span class="details">Aca podes ver todas las rutas disponibles</span>                     <%--<asp:DropDownList ID="DropDownList1" runat="server" >
                         <asp:ListItem>Pavas</asp:ListItem>
                         <asp:ListItem>San Jose</asp:ListItem>
                         <asp:ListItem>Montes de Oca</asp:ListItem>
@@ -40,14 +39,17 @@
                
                
               <div class="input-box">
-               <asp:Button ID="Button1" runat="server" Text="Ver Rutas" />
+               <asp:Button ID="BtnVerRutas" runat="server" Text="Ver Rutas" OnClick="BtnVerRutas_Click" />
                </div>
 
 
-                <div class="input-box">
-                    <asp:ListBox ID="ListBox1" runat="server" Height="174px" Width="200%"></asp:ListBox>
+                <div class="input-box" style="width: 100%; height: 400px; overflow:scroll">
+                    
+                    <asp:GridView ID="GVVerRutas" runat="server" Visible="false"></asp:GridView>
                </div>
 
+
+                
 
 
 
