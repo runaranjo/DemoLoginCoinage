@@ -33,7 +33,24 @@ namespace CoinageUI
 
 
 
+        public string actualizaSaldo(string email, int saldo)
+        {
 
+
+            // FALTA ACTUALIZAR SALDO
+
+            sqlCon.Open();
+
+            string checkDB = "Update pasajeros set saldo = saldo+@saldo WHERE email=@username";
+            SqlCommand sqlcom = new SqlCommand(checkDB, sqlCon);
+            sqlcom.Parameters.AddWithValue("@username", email);
+            sqlcom.Parameters.AddWithValue("@saldo", saldo);
+            string usuarioSaldo = Convert.ToString(sqlcom.ExecuteScalar());
+            sqlCon.Close();
+
+            return usuarioSaldo;
+
+        }
 
 
 

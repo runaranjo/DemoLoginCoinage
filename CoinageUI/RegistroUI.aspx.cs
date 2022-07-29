@@ -11,6 +11,13 @@ namespace CoinageUI
 {
     public partial class RegistroUI : System.Web.UI.Page
     {
+
+
+        DBCreate registraUsuario = new DBCreate();
+        DBCreate registraPasajero = new DBCreate();
+
+   
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -35,10 +42,20 @@ namespace CoinageUI
                 }
                 else
                 {
-                    DBCreate registraPasajero = new DBCreate();
 
-                    registraPasajero.insertRegistroUsuario(TxtBoxEmail.Text, TxtBoxPassword.Text, 3);
+                int pasajeroId = Convert.ToInt32(TxtBoxID.Text);
 
+                registraUsuario.insertRegistroUsuario(TxtBoxEmail.Text, TxtBoxPassword.Text, 3);
+                registraPasajero.insertRegistroPasajero(pasajeroId, TxtBoxNombre.Text, TxtBoxEmail.Text, 0);
+
+                    TxtBoxNombre.Text = "";
+                    TxtBoxID.Text = "";
+                    TxtBoxEmail.Text = "";
+                    TxtBoxTelefono.Text = "";
+                    TxtBoxPassword.Text = "";
+                    TxtBoxConfirmPass.Text = "";
+
+                LblUsuarioIncorrecto.Text = "Te has registrado con exito!!";
                 }
 
         }

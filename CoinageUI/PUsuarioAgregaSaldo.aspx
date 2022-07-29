@@ -39,7 +39,7 @@
                 </div>
 
 
-                <div class="input-box">
+               <%-- <div class="input-box">
                 <table class="input-box">
                     <tr>
                     <th>Fecha Expiracion</th>
@@ -50,17 +50,22 @@
                      <td><asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>  </td>
                     </tr>
                 </table>
-            </div>
+            </div>--%>
 
 
                  <div class="input-box">
                    <span class="details">Ingrese el monto a acreditar</span>
-                   <asp:TextBox ID="TextBox1" runat="server" style="width:50%"></asp:TextBox>
+                   <asp:TextBox ID="TxtBoxAcreditaSaldo" runat="server" style="width:50%"></asp:TextBox>
                 </div>
 
 
                 <div class="input-box">
-                    <asp:Button ID="Button1" runat="server" Text="Acreditar" style="width:70%; color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);" />
+                    <asp:Button ID="BtnAgregaSaldo" runat="server" Text="Acreditar" style="width:70%; color: #fff; background:linear-gradient(-135deg, #71b7e6, #9b59b6);" OnClick="BtnAgregaSaldo_Click" />
+
+                </div>
+
+                         <div class="input-box">
+                             <asp:Label ID="LblSaldoAcreditado" runat="server" Text="Label" Visible="false"></asp:Label>
 
                 </div>
 

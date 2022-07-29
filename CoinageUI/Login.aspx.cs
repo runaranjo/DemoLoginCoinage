@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.Security;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
@@ -17,6 +18,8 @@ namespace CoinageUI
         public static string role;
 
         
+
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             LblLoginFailed.Visible = false;
@@ -28,7 +31,7 @@ namespace CoinageUI
                 DBRead loginUsuario = new DBRead();
                 int count  = loginUsuario.verificarUsuarioLogin(TxtUsername.Text.Trim(), TxtPassword.Text.Trim());
                 int idRole = loginUsuario.verificarUsuarioRol(TxtUsername.Text.Trim());
-                Session["username"] = TxtUsername.Text.Trim();
+                Session["username"] = TxtUsername.Text;
 
 
             if (count == 1 && idRole == 1)

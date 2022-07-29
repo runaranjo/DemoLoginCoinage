@@ -30,6 +30,26 @@ namespace CoinageUI
         }
 
 
+        public void insertRegistroPasajero(int pasajeroId, string nombre, string email, int saldo)
+        {
+
+            sqlCon.Open();
+            string query = "Insert into Pasajeros (pasajeroId,nombre , email, saldo) Values(@pasajeroid, @nombre, @email, @saldo)";
+
+            SqlCommand insertarCom = new SqlCommand(query, sqlCon);
+            insertarCom.Parameters.AddWithValue("@pasajeroId", pasajeroId);
+            insertarCom.Parameters.AddWithValue("@nombre", nombre);
+            insertarCom.Parameters.AddWithValue("@email", email);
+            insertarCom.Parameters.AddWithValue("@saldo", saldo);
+            insertarCom.ExecuteNonQuery();
+            sqlCon.Close();
+
+        }
+
+
+
+
+
         public void insertRegistroChofer(int choferId, string nombre, string email)
         {
 

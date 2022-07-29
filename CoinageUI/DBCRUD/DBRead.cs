@@ -86,7 +86,18 @@ namespace CoinageUI
 
 
 
+        public int mostrarSaldo(string email)
+        {
+            sqlCon.Open();
+            string checkDB = "Select saldo FROM pasajeros WHERE email=@username";
+            SqlCommand sqlcom = new SqlCommand(checkDB, sqlCon);
+            sqlcom.Parameters.AddWithValue("@username", email);
+            int saldoUsuario = Convert.ToInt32(sqlcom.ExecuteScalar());
+            sqlCon.Close();
 
+            return saldoUsuario;
+
+        }
 
 
 
