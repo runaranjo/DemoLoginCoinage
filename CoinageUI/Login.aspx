@@ -25,7 +25,7 @@
                 </div>
                 <div class="input-box">
                 <span class="details">Contrasena</span>
-                    <asp:TextBox ID="TxtPassword" runat="server" placeholder="Ingresa tu contrasena" ></asp:TextBox>
+                    <asp:TextBox ID="TxtPassword" runat="server" placeholder="Ingresa tu contrasena" TextMode="Password" ></asp:TextBox>
                 </div>
              
             </div>
