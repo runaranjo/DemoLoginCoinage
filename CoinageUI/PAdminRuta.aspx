@@ -35,9 +35,9 @@
                 </div>
 
                 <div class="input-box">
-                <span class="details">ID Ruta</span>
+                <span class="details">Codigo CTP</span>
                     <%--<input type="text" placeholder="Ingresa tu cedula de identidad" />--%>
-                 <asp:TextBox ID="TxtBoxRutaId" runat="server" placeholder="Ingresa Ruta ID"></asp:TextBox>
+                 <asp:TextBox ID="TxtBoxRutaId" runat="server" placeholder="Ingresa Codigo CTP de la ruta"></asp:TextBox>
                 </div>
 
                 <div class="input-box">

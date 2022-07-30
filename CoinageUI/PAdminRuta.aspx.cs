@@ -32,12 +32,12 @@ namespace CoinageUI
         {
 
 
-            int rutaId = Convert.ToInt32(TxtBoxRutaId.Text);
+            
             int rutaCosto = Convert.ToInt32(TxtBoxCosto.Text);
+            int cantonId = Convert.ToInt32(TxtBoxRutaCanton.Text);
 
 
-
-            dbCreaRuta.insertRegistroRuta(TxtBoxNombreRuta.Text, rutaId, rutaCosto, 2);
+            dbCreaRuta.insertRegistroRuta(TxtBoxNombreRuta.Text, TxtBoxRutaId.Text, rutaCosto, cantonId);
 
 
             LblRutaAgregada.Visible = true;

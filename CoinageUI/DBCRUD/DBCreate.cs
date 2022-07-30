@@ -65,15 +65,15 @@ namespace CoinageUI
 
         }
 
-        public void insertRegistroRuta(string nombreRuta, int rutaId, int costo, int idCanton)
+        public void insertRegistroRuta(string nombreRuta, string codigoCTP, int costo, int idCanton)
         {
 
             sqlCon.Open();
-            string query = "Insert into Rutas (Nombre,RutaId,Costo, CantonId) Values(@Nombre, @RutaId, @costo, @CantonId)";
+            string query = "Insert into Rutas (Nombre,codigoCTP,Costo, CantonId) Values(@Nombre, @codigoCTP, @costo, @CantonId)";
 
             SqlCommand insertarCom = new SqlCommand(query, sqlCon);
             insertarCom.Parameters.AddWithValue("@Nombre", nombreRuta);
-            insertarCom.Parameters.AddWithValue("@RutaId", rutaId);
+            insertarCom.Parameters.AddWithValue("@CodigoCTP", codigoCTP);
             insertarCom.Parameters.AddWithValue("@costo", costo);
             insertarCom.Parameters.AddWithValue("@CantonId", idCanton);
             insertarCom.ExecuteNonQuery();
